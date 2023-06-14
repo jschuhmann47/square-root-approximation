@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 
-const MAX_ITERATIONS = 10;
+const int MAX_ITERATIONS = 10;
 
 // Function declarations
 
@@ -78,7 +78,10 @@ double absolute_error(int originalNumber, double result){
 }
 
 void show_error_percentage(int originalNumber, double result){
-
+    if (originalNumber == 0){
+        printf("The original number is zero, not calculating percentage");
+        return;
+    }
     double percentage = absolute_error(originalNumber, result) * 100.0 / originalNumber;
     printf("The error is a %.2f percent", percentage);
 }
