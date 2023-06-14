@@ -6,10 +6,10 @@ const MAX_ITERATIONS = 10;
 
 // Function declarations
 
-// Calculates f(x) = x^2 - n where n is the user input
+// Calculates `f(x) = x^2 - n` where n is the user input
 double original_function(double x, int root);
 
-// Calculates f'(x) = 2 * x
+// Calculates `f'(x) = 2 * x`
 double derivative_function(double x);
 
 // Calculates an aproximate square root using Newton - Raphson, with iterations equal to MAX_ITERATIONS
@@ -19,10 +19,20 @@ double square_root(int root);
 void showErrorPercentage(int originalNumber, double result);
 
 int main(){
-    //Input
+    
+    // Input
     int input;
     printf("Enter an integer number: ");
     scanf("%d", &input);
+
+    if (input < 0){
+        printf("Error: number must be positive.");
+        return 1;
+    }
+    if (input == 0){
+        printf("The square root is 0.");
+        return 0;
+    }
 
     // Result
 
