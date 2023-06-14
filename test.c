@@ -16,7 +16,7 @@ double derivative_function(double x);
 double square_root(int root);
 
 // Shows the percentage of error bewteen the approximate square root and the user input
-void showErrorPercentage(int originalNumber, double result);
+void show_error_percentage(int originalNumber, double result);
 
 int main(){
     
@@ -41,7 +41,7 @@ int main(){
     printf("The square root is %f",squareRoot); 
     printf("\n");
 
-    showErrorPercentage(input, squareRoot);
+    show_error_percentage(input, squareRoot);
 
     return 0;
 }
@@ -77,7 +77,7 @@ double absolute_error(int originalNumber, double result){
     return fabs(sqrt(originalNumber) - result);
 }
 
-void showErrorPercentage(int originalNumber, double result){
+void show_error_percentage(int originalNumber, double result){
 
     double percentage = absolute_error(originalNumber, result) * 100.0 / originalNumber;
     printf("The error is a %.2f percent", percentage);
