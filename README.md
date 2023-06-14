@@ -16,5 +16,5 @@ loop number: 6, value: 25.001776
 loop number: 7, value: 25.000000
 loop number: 8, value: 25.000000
 The square root is 25.000000
-The error is a 0.00 percent
+The error is 0.00 percent
 ```
