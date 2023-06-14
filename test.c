@@ -55,7 +55,7 @@ double square_root(int userInput){
                         (original_function(previousValue,userInput) 
                         / 
                         derivative_function(previousValue));
-        printf("loop number: %d, value: %f\n",i,previousValue);
+        printf("loop number: %d, value: %f\n", i+1, previousValue);
 
         if(previousValue * previousValue == userInput){
             break;
@@ -83,5 +83,5 @@ void show_error_percentage(int originalNumber, double result){
         return;
     }
     double percentage = absolute_error(originalNumber, result) * 100.0 / originalNumber;
-    printf("The error is a %.2f percent", percentage);
+    printf("The error is %.2f percent", percentage);
 }
