@@ -42,6 +42,7 @@ int main(){
     printf("\n");
 
     show_error_percentage(input, squareRoot);
+    printf("\n");
 
     return 0;
 }
