@@ -1,6 +1,6 @@
-# Square Root Aproximation
+# Square Root Approximation
 
-This C program aproximates the square root of a given integer using the Newton-Raphson method.
+This C program approximates the square root of a given integer using the Newton-Raphson method.
 
 ## Example
 
